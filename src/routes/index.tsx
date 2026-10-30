@@ -9,7 +9,7 @@ export const Route = createFileRoute("/")({
       { title: "Jeet Patel — MERN Stack Developer Portfolio" },
       { name: "description", content: "Portfolio of Jeet Patel, FYMCA student and MERN stack developer from Gujarat, India." },
       { property: "og:title", content: "Jeet Patel — MERN Stack Developer" },
-      { property: "og:description", content: "Projects, college practicals, skills and contact for Jeet Patel." },
+      { property: "og:description", content: "Projects, skills and contact for Jeet Patel." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
     ],
@@ -105,7 +105,7 @@ function Index() {
           </div>
         </Section>
 
-        <Section id="projects" title="Projects & College Practicals">
+        <Section id="projects" title="Projects">
           <div className="mb-6 flex flex-wrap gap-2">
             {cats.map((c) => (
               <button key={c} onClick={() => setFilter(c)} className={`chip ${filter === c ? "chip-active" : ""}`}>{c}</button>

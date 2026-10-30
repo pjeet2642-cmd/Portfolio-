@@ -25,7 +25,7 @@ export type Project = {
   title: string;
   description: string;
   tech: string[];
-  category: "College Practical" | "MERN Project" | "Mini Project" | "Personal Project";
+  category: "MERN Project" | "Mini Project" | "Personal Project";
   github: string;
   demo: string;
   meta?: string | undefined;
@@ -42,10 +42,5 @@ const p = (title: string, tech: string[], category: Project["category"], meta?: 
 });
 
 export const projects: Project[] = [
-  p("HTML/CSS Practical", ["HTML", "CSS"], "College Practical", "Practical [#] · [Subject] · Sem [#]"),
-  p("JavaScript Practical", ["JavaScript"], "College Practical", "Practical [#] · [Subject] · Sem [#]"),
-  p("React.js Practical", ["React"], "College Practical", "Practical [#] · [Subject] · Sem [#]"),
-  p("Node.js & Express Practical", ["Node.js", "Express"], "College Practical", "Practical [#] · [Subject] · Sem [#]"),
-  p("MongoDB Practical", ["MongoDB", "Mongoose"], "College Practical", "Practical [#] · [Subject] · Sem [#]"),
   p("Full-Stack MERN Project", ["MongoDB", "Express", "React", "Node.js"], "MERN Project"),
 ];
